@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D415013F29880F0700DA1696 /* LeiMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415013E29880F0700DA1696 /* LeiMapApp.swift */; };
-		D415014129880F0700DA1696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014029880F0700DA1696 /* ContentView.swift */; };
+		D415014129880F0700DA1696 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014029880F0700DA1696 /* MapView.swift */; };
 		D415014329880F0900DA1696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D415014229880F0900DA1696 /* Assets.xcassets */; };
 		D415014629880F0900DA1696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D415014529880F0900DA1696 /* Preview Assets.xcassets */; };
+		D415014D298810BE00DA1696 /* MapListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014C298810BE00DA1696 /* MapListView.swift */; };
+		D415014F298814C500DA1696 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014E298814C500DA1696 /* Model.swift */; };
+		D41501512988161E00DA1696 /* IndProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41501502988161E00DA1696 /* IndProfilView.swift */; };
+		D4150153298816E100DA1696 /* LeiMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4150152298816E100DA1696 /* LeiMapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D415013B29880F0700DA1696 /* LeiMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeiMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D415013E29880F0700DA1696 /* LeiMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiMapApp.swift; sourceTree = "<group>"; };
-		D415014029880F0700DA1696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D415014029880F0700DA1696 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D415014229880F0900DA1696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D415014529880F0900DA1696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D415014C298810BE00DA1696 /* MapListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListView.swift; sourceTree = "<group>"; };
+		D415014E298814C500DA1696 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D41501502988161E00DA1696 /* IndProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndProfilView.swift; sourceTree = "<group>"; };
+		D4150152298816E100DA1696 /* LeiMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiMapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				D415013E29880F0700DA1696 /* LeiMapApp.swift */,
-				D415014029880F0700DA1696 /* ContentView.swift */,
+				D415014029880F0700DA1696 /* MapView.swift */,
+				D415014C298810BE00DA1696 /* MapListView.swift */,
 				D415014229880F0900DA1696 /* Assets.xcassets */,
 				D415014429880F0900DA1696 /* Preview Content */,
+				D41501502988161E00DA1696 /* IndProfilView.swift */,
+				D415014E298814C500DA1696 /* Model.swift */,
+				D4150152298816E100DA1696 /* LeiMapViewModel.swift */,
 			);
 			path = LeiMap;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D415014129880F0700DA1696 /* ContentView.swift in Sources */,
+				D4150153298816E100DA1696 /* LeiMapViewModel.swift in Sources */,
+				D415014129880F0700DA1696 /* MapView.swift in Sources */,
 				D415013F29880F0700DA1696 /* LeiMapApp.swift in Sources */,
+				D415014D298810BE00DA1696 /* MapListView.swift in Sources */,
+				D415014F298814C500DA1696 /* Model.swift in Sources */,
+				D41501512988161E00DA1696 /* IndProfilView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

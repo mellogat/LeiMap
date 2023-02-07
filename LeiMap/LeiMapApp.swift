@@ -11,7 +11,8 @@ import SwiftUI
 struct LeiMapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapListView()
+                .environmentObject(LeiMapViewModel())
         }
     }
 }
