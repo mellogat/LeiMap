@@ -37,7 +37,7 @@ struct MapListView: View {
                         .resizable()
                         .scaledToFit()
                         .padding()
-                    Text("Lieu")
+                    Text("Lieu&")
                     Text("Adresse")
                     
                     List{
