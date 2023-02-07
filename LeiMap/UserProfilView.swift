@@ -11,6 +11,8 @@ struct UserProfilView: View {
     @State private var username=""
     @State private var email=""
     @State private var bio=""
+    @State private var biographie="Écrivez votre biographie"
+
     var body: some View {
         
         VStack{
@@ -43,6 +45,19 @@ struct UserProfilView: View {
             }
             .padding()
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+            TextEditor(text: $biographie)
+                            .foregroundColor(.black) // Text color
+                            .background(Color.blue)
+            
+            Button(action: { }) {
+                   Text("UPDATE")
+                       .padding()
+
+                       .border(.blue)
+               }
+               .foregroundColor(.white)
+               .background(.blue)
+               .cornerRadius(10)
             Spacer()
             
 
