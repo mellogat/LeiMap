@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6EDD8D29A3B24D006CBAA3 /* OurTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */; };
 		7EC8E0CC29928B86006FF9E6 /* UserProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */; };
 		D415013F29880F0700DA1696 /* LeiMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415013E29880F0700DA1696 /* LeiMapApp.swift */; };
 		D415014129880F0700DA1696 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014029880F0700DA1696 /* MapView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTabItemView.swift; sourceTree = "<group>"; };
 		7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilView.swift; sourceTree = "<group>"; };
 		D415013B29880F0700DA1696 /* LeiMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeiMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D415013E29880F0700DA1696 /* LeiMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiMapApp.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D415014E298814C500DA1696 /* Model.swift */,
 				D4150152298816E100DA1696 /* LeiMapViewModel.swift */,
 				7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */,
+				7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */,
 			);
 			path = LeiMap;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				D415014D298810BE00DA1696 /* MapListView.swift in Sources */,
 				7EC8E0CC29928B86006FF9E6 /* UserProfilView.swift in Sources */,
 				D415014F298814C500DA1696 /* Model.swift in Sources */,
+				7E6EDD8D29A3B24D006CBAA3 /* OurTabItemView.swift in Sources */,
 				D41501512988161E00DA1696 /* IndProfilView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

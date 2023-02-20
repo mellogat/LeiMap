@@ -59,9 +59,10 @@ struct UserProfilView: View {
                .background(.blue)
                .cornerRadius(10)
             Spacer()
-            
+           
 
         }
+       
         
     }
 }
