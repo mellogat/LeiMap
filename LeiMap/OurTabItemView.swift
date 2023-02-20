@@ -20,7 +20,7 @@ struct OurTabItemView: View {
                         }
                         .tag("Profil")
 
-                    MapListView()
+                    MapView()
                         .tabItem {
                             Label("Map", systemImage: "person")
                         }

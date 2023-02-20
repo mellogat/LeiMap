@@ -10,8 +10,10 @@ import SwiftUI
 struct UserProfilView: View {
     @State private var username=""
     @State private var email=""
-    @State private var bio=""
-    @State private var biographie="Écrivez votre biographie"
+    @State private var biographie="Écrivez votre bio"
+    @State var savedInfos: Bool = false
+    @Environment(\.presentationMode) var presentationMode
+
 
     var body: some View {
         
@@ -31,37 +33,57 @@ struct UserProfilView: View {
                     .shadow(radius: 10)
                 
             }
-            HStack {
-              Image(systemName: "person").foregroundColor(.gray)
-              TextField("Enter your username", text: $username)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Form{
+                HStack {
+                  Image(systemName: "person").foregroundColor(.gray)
+                  TextField("Enter your username", text: $username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                .padding()
+                HStack {
+                  Image(systemName: "envelope").foregroundColor(.gray)
+                  TextField("Enter your email", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                .padding()
             }
-            .padding()
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-            HStack {
-              Image(systemName: "envelope").foregroundColor(.gray)
-              TextField("Enter your email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-            .padding()
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
             TextEditor(text: $biographie)
                             .foregroundColor(.black) // Text color
                             .background(Color.blue)
             
-            Button(action: { }) {
-                   Text("UPDATE")
-                       .padding()
+            Button(action: {
+                savedInfos = true
+                LocalStorage.myValueU = self.username
+                LocalStorage.myValueE = self.email
+                LocalStorage.myValueB = self.biographie
+                presentationMode.wrappedValue.dismiss()
+                presentationMode.wrappedValue.dismiss()
 
-                       .border(.blue)
-               }
-               .foregroundColor(.white)
-               .background(.blue)
-               .cornerRadius(10)
+
+                }, label: {
+                    Text("Update")
+                })
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .frame(height: 55)
+                    .frame(maxWidth:150)
+                    .background(Color.accentColor)
+                    .cornerRadius(10)
+                    .disabled(username.isEmpty||email.isEmpty)
+                    .alert("✅ Info successfully updated",
+                            isPresented: $savedInfos) {
+                    }
             Spacer()
            
 
         }
+        .onAppear(perform: {
+                        self.username = LocalStorage.myValueU
+                        self.email = LocalStorage.myValueE
+                        self.biographie = LocalStorage.myValueB
+
+
+                    })
        
         
     }
