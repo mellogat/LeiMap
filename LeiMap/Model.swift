@@ -2,7 +2,7 @@
 //  Model.swift
 //  LeiMap
 //
-//  Created by megat megat salman shukri on 30/01/2023.
+//  Created by ngom arona on 30/01/2023.
 //
 import Foundation
 
@@ -12,8 +12,8 @@ struct User: Identifiable {
     var email: String
     
     static var mockData = [
-        User(id: 1, name: "Taylor Swift" ,email: "Taylor Swift"),
-        User(id: 2, name: "Justin Bieber",email: "Taylor Swift"),
-        User(id: 3, name: "Adele Adkins",email: "Taylor Swift")
+        User(id: 1, name: "Arona NGOM" ,email: "arona.ngom07@gmail.com"),
+        User(id: 2, name: "Otto HAJDU",email: "otto@gmail.com"),
+        User(id: 3, name: "Megat SALMAN",email: "megat@gmail.com")
     ]
 }

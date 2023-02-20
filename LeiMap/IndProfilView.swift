@@ -10,7 +10,7 @@ import SwiftUI
 
 struct IndProfilView: View {
     @State private var username=""
-    @State private var email="arona.ngom@gmail.com"
+    @State private var email="arona.ngom07@gmail.com"
     @State private var bio=""
     @State private var biographie="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     let user: User
@@ -47,6 +47,10 @@ struct IndProfilView: View {
             .padding()
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
             Text(biographie)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .border(.black)
+               
 
             Spacer()
             
