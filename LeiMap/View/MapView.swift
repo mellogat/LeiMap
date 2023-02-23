@@ -10,8 +10,8 @@ import MapKit
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 37.334_900,
-                                           longitude: -122.009_020),
+            center: CLLocationCoordinate2D(latitude: 47.6407,
+                                           longitude: 6.84168),
             latitudinalMeters: 750,
             longitudinalMeters: 750
         )

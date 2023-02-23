@@ -18,6 +18,7 @@
 		D415014F298814C500DA1696 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415014E298814C500DA1696 /* Model.swift */; };
 		D41501512988161E00DA1696 /* IndProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41501502988161E00DA1696 /* IndProfilView.swift */; };
 		D4150153298816E100DA1696 /* LeiMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4150152298816E100DA1696 /* LeiMapViewModel.swift */; };
+		D457A01529A77E45006A0D11 /* ParticipantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457A01429A77E45006A0D11 /* ParticipantService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		D415014E298814C500DA1696 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D41501502988161E00DA1696 /* IndProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndProfilView.swift; sourceTree = "<group>"; };
 		D4150152298816E100DA1696 /* LeiMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiMapViewModel.swift; sourceTree = "<group>"; };
+		D457A01429A77E45006A0D11 /* ParticipantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantService.swift; sourceTree = "<group>"; };
+		D457A01629A78900006A0D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +68,14 @@
 		D415013D29880F0700DA1696 /* LeiMap */ = {
 			isa = PBXGroup;
 			children = (
-				D415013E29880F0700DA1696 /* LeiMapApp.swift */,
-				D415014029880F0700DA1696 /* MapView.swift */,
-				D415014C298810BE00DA1696 /* MapListView.swift */,
+				D457A01629A78900006A0D11 /* Info.plist */,
 				D415014229880F0900DA1696 /* Assets.xcassets */,
-				D415014429880F0900DA1696 /* Preview Content */,
-				D41501502988161E00DA1696 /* IndProfilView.swift */,
-				D415014E298814C500DA1696 /* Model.swift */,
 				D4150152298816E100DA1696 /* LeiMapViewModel.swift */,
-				7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */,
-				7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */,
 				7E6EDD8E29A3BB15006CBAA3 /* LocalStorage.swift */,
+				D457A01329A77D43006A0D11 /* View */,
+				D457A01229A77D39006A0D11 /* Model */,
+				D457A01129A77D1C006A0D11 /* Service */,
+				D415014429880F0900DA1696 /* Preview Content */,
 			);
 			path = LeiMap;
 			sourceTree = "<group>";
@@ -84,8 +84,37 @@
 			isa = PBXGroup;
 			children = (
 				D415014529880F0900DA1696 /* Preview Assets.xcassets */,
+				D415013E29880F0700DA1696 /* LeiMapApp.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D457A01129A77D1C006A0D11 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D457A01429A77E45006A0D11 /* ParticipantService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D457A01229A77D39006A0D11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D415014E298814C500DA1696 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D457A01329A77D43006A0D11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D415014029880F0700DA1696 /* MapView.swift */,
+				D415014C298810BE00DA1696 /* MapListView.swift */,
+				D41501502988161E00DA1696 /* IndProfilView.swift */,
+				7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */,
+				7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6EDD8F29A3BB15006CBAA3 /* LocalStorage.swift in Sources */,
+				D457A01529A77E45006A0D11 /* ParticipantService.swift in Sources */,
 				D4150153298816E100DA1696 /* LeiMapViewModel.swift in Sources */,
 				D415014129880F0700DA1696 /* MapView.swift in Sources */,
 				D415013F29880F0700DA1696 /* LeiMapApp.swift in Sources */,
@@ -299,6 +329,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LeiMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeiMap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +359,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LeiMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeiMap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
