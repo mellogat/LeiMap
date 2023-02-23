@@ -18,8 +18,8 @@ struct Location: Identifiable {
 extension Location {
     static func getLocations() -> [Location] {
         return [
-            Location(title: "Paris", coordinate: CLLocationCoordinate2D(latitude: 51.589, longitude: 4.77)),
-            Location(title: "Dakar", coordinate: CLLocationCoordinate2D(latitude: 51.55, longitude: 5.05 ))
+            Location(title: "Lieu 1", coordinate: CLLocationCoordinate2D(latitude: 47.6407, longitude: 6.84168)),
+            Location(title: "Lieu 2", coordinate: CLLocationCoordinate2D(latitude: 47.6435, longitude: 6.85776 ))
         ]
     }
 }
@@ -29,7 +29,7 @@ struct MapView: View {
     @State private var locations: [Location] = Location.getLocations()
     @State private var trackingMode = MapUserTrackingMode.follow
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: 4.9), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 47.641193, longitude: 6.847646),latitudinalMeters: 2000,longitudinalMeters: 2000)
     
     var body: some View {
         NavigationView {

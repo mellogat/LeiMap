@@ -56,15 +56,15 @@ class LeiMapViewModel: ObservableObject {
         }
     }
     
-//    @Published var users : [User] = []
-//    
-//    init() {
-//        getMockContact()
-//        //getContacts()
-//    }
-//    
-//    func getMockContact() {
-//        users.append(contentsOf: User.mockData)
-//    }
+    @Published var users : [User] = []
+    
+    init() {
+        getMockContact()
+        //getContacts()
+    }
+    
+    func getMockContact() {
+        users.append(contentsOf: User.mockData)
+    }
 
 }
