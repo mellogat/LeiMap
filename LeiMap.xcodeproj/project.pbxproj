@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E293F7929A7BF6A000D333F /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E293F7829A7BF6A000D333F /* PinView.swift */; };
 		7E6EDD8D29A3B24D006CBAA3 /* OurTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */; };
 		7E6EDD8F29A3BB15006CBAA3 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDD8E29A3BB15006CBAA3 /* LocalStorage.swift */; };
 		7EC8E0CC29928B86006FF9E6 /* UserProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E293F7829A7BF6A000D333F /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTabItemView.swift; sourceTree = "<group>"; };
 		7E6EDD8E29A3BB15006CBAA3 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D41501502988161E00DA1696 /* IndProfilView.swift */,
 				7EC8E0CB29928B86006FF9E6 /* UserProfilView.swift */,
 				7E6EDD8C29A3B24D006CBAA3 /* OurTabItemView.swift */,
+				7E293F7829A7BF6A000D333F /* PinView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				D415014D298810BE00DA1696 /* MapListView.swift in Sources */,
 				7EC8E0CC29928B86006FF9E6 /* UserProfilView.swift in Sources */,
 				D415014F298814C500DA1696 /* Model.swift in Sources */,
+				7E293F7929A7BF6A000D333F /* PinView.swift in Sources */,
 				7E6EDD8D29A3B24D006CBAA3 /* OurTabItemView.swift in Sources */,
 				D41501512988161E00DA1696 /* IndProfilView.swift in Sources */,
 			);
