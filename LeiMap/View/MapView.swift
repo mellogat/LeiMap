@@ -18,8 +18,8 @@ struct Location: Identifiable {
 extension Location {
     static func getLocations() -> [Location] {
         return [
-            Location(title: "Lieu 1", coordinate: CLLocationCoordinate2D(latitude: 47.6407, longitude: 6.84168)),
-            Location(title: "Lieu 2", coordinate: CLLocationCoordinate2D(latitude: 47.6435, longitude: 6.85776 ))
+            Location(title: "1", coordinate: CLLocationCoordinate2D(latitude: 47.6407, longitude: 6.84168)),
+            Location(title: "2", coordinate: CLLocationCoordinate2D(latitude: 47.6435, longitude: 6.85776 ))
         ]
     }
 }

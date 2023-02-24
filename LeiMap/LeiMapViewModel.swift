@@ -35,6 +35,20 @@ class LeiMapViewModel: ObservableObject {
         }
     }
     
+    func getParticipants(from lieu: String) async {
+        self.state = .loading
+        self.hasError = false
+        do {
+            let users = try await service.fetchParticipantDansUnLieu(for: lieu)
+            self.state = .success(data: users)
+        } catch {
+            self.state = .failed(error: error)
+            self.hasError = true
+            print(error)
+        }
+    }
+    
+    
     enum State2 {
         case notAvailable
         case loading

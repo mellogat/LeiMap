@@ -18,6 +18,7 @@ struct MapListView: View {
             longitudinalMeters: 750
         )
     @EnvironmentObject var lmVM: LeiMapViewModel
+    var lieu: String
     
     var body: some View {
         NavigationView{
@@ -39,8 +40,8 @@ struct MapListView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .padding()
-                                Text(lieus[0].nom)
-                                Text(lieus[0].adresse)
+                            Text(lieus[(Int(lieu)!-1)].nom)
+                                Text(lieus[(Int(lieu)!-1)].adresse)
                                 Divider()
                               case .loading:
                                   ProgressView()
@@ -70,7 +71,7 @@ struct MapListView: View {
                           }
                       }
                       .task {
-                          await viewModel.getParticipants()
+                          await viewModel.getParticipants(from: lieu)
                       }
                         Spacer()
                         Button {
@@ -101,7 +102,7 @@ struct MapListView: View {
 
 struct MapListView_Previews: PreviewProvider {
     static var previews: some View {
-        MapListView()
+        MapListView(lieu:"2")
             .environmentObject(LeiMapViewModel())
     }
 }

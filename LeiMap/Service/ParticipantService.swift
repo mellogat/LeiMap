@@ -45,5 +45,24 @@ struct ParticipantService {
         
         return decodeData
     }
+    
+    func fetchParticipantDansUnLieu(for lieu: String) async throws -> [User] {
+        let baseUrl = "http://www-etu.iut-bm.univ-fcomte.fr/~ohajdu/listeParticipantsDansUnLieu.php/?lieu=\(lieu)"
+        
+        guard let url = URL(string: baseUrl) else {
+            throw ParticipantError.invalideStatusCode
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else{
+            throw ParticipantError.invalideStatusCode
+        }
+        
+        let decodeData = try JSONDecoder().decode([User].self, from: data)
+        
+        return decodeData
+    }
+    
 
 }
