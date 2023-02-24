@@ -62,17 +62,16 @@ struct MapListView: View {
                                                 ListParticipant(user:user)
                                             }
                                             
-                                            Toggle("Bonjour, participez à la conférence!", isOn: $checkin)
-                                            if checkin {
-                                                HStack{
-                                                    Text("Vous êtes participant")
-                                                    Text(user.in_lieu)
-                                                }
-                                                // ajout de la fonctionnalité du toggle
-                                                
-                                            }
+                            
                                           }
-                                    
+                                    Toggle("Bonjour, participez à la conférence!", isOn: $checkin)
+                                    if checkin {
+                                        HStack{
+                                            Text("Vous êtes participant")
+                                        }
+                                        // ajout de la fonctionnalité du toggle
+                                        
+                                    }
                                    
                                     }
                                 .listStyle(PlainListStyle())
