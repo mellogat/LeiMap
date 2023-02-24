@@ -26,7 +26,7 @@ struct PinView: View {
         } else {
             return AnyView (
                 VStack {
-                    NavigationLink(destination: Text(title), tag: 1, selection: $action) {
+                    NavigationLink(destination: MapListView(), tag: 1, selection: $action) {
                         EmptyView()
                     }
                     Text(title)

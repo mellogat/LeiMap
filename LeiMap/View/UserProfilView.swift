@@ -23,7 +23,7 @@ struct UserProfilView: View {
                     .resizable()
                     .frame(height: 250)
                     .edgesIgnoringSafeArea(.top)
-                Image("meg")
+                Image("profil")
                     .resizable()
                     .offset(y: 0).padding(.bottom, -10)
                     .frame(width: 180, height: 200)
