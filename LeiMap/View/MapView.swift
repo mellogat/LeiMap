@@ -36,6 +36,7 @@ struct MapView: View {
             Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: locations) { (location) -> MapAnnotation<PinView> in
                 MapAnnotation(coordinate: location.coordinate) { PinView(title: location.title)}
             }.navigationBarHidden(true)
+            
         }
     }
 }

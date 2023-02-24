@@ -51,7 +51,7 @@ struct IndProfilView: View {
             }
             .padding()
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-            Text(biographie)
+            Text(user.bio)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .border(.black)

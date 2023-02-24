@@ -72,8 +72,11 @@ struct MapListView: View {
                                                 
                                             }
                                           }
+                                    
+                                   
                                     }
                                 .listStyle(PlainListStyle())
+                                
                               case .loading:
                                   ProgressView()
                               case .failed:
@@ -115,7 +118,7 @@ struct MapListView: View {
 
 struct MapListView_Previews: PreviewProvider {
     static var previews: some View {
-        MapListView(lieu:"2")
+        MapListView(lieu:"1")
             .environmentObject(LeiMapViewModel())
     }
 }
