@@ -11,13 +11,13 @@ struct User: Identifiable, Codable, Hashable {
     var nom: String
     var email: String
     var password: String?
-    var in_lieu: String?
+    var in_lieu: String
     var id_lieu: String?
     
     static var mockData = [
-        User(id: "1", nom: "Arona NGOM" ,email: "arona.ngom07@gmail.com"),
-        User(id: "2", nom: "Otto HAJDU",email: "otto@gmail.com"),
-        User(id: "3", nom: "Megat SALMAN",email: "megat@gmail.com")
+        User(id: "1", nom: "Arona NGOM" ,email: "arona.ngom07@gmail.com",in_lieu:"1"),
+        User(id: "2", nom: "Otto HAJDU",email: "otto@gmail.com",in_lieu:"0"),
+        User(id: "3", nom: "Megat SALMAN",email: "megat@gmail.com",in_lieu:"1")
     ]
 }
 

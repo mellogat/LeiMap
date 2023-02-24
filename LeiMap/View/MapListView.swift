@@ -61,6 +61,16 @@ struct MapListView: View {
                                             NavigationLink(destination: IndProfilView(user:user)){
                                                 ListParticipant(user:user)
                                             }
+                                            
+                                            Toggle("Bonjour, participez à la conférence!", isOn: $checkin)
+                                            if checkin {
+                                                HStack{
+                                                    Text("Vous êtes participant")
+                                                    Text(user.in_lieu)
+                                                }
+                                                // ajout de la fonctionnalité du toggle
+                                                
+                                            }
                                           }
                                     }
                                 .listStyle(PlainListStyle())
@@ -76,12 +86,7 @@ struct MapListView: View {
                           await viewModel.getParticipants(from: lieu)
                       }
                         Spacer()
-                        Toggle("Bonjour, participez à la conférence!", isOn: $checkin)
-                        if checkin {
-                                Text("Vous êtes participant")
-                            // ajout de la fonctionnalité du toggle
-                            
-                        }
+                      
 //                        Button {
 //                        } label: {
 //                            Text("Check In")
