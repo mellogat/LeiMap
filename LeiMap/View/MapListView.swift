@@ -10,6 +10,8 @@ import MapKit
 
 
 struct MapListView: View {
+    @State private var checkin = false
+
     @StateObject var viewModel = LeiMapViewModel()
     @State private var region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 47.6407,
@@ -74,17 +76,23 @@ struct MapListView: View {
                           await viewModel.getParticipants(from: lieu)
                       }
                         Spacer()
-                        Button {
-                        } label: {
-                            Text("Check In")
-                                .frame(height: 55)
-                                .frame(maxWidth: .infinity)
-                                .foregroundColor(.white)
-                                .background(Color.accentColor)
-                                .font(.headline)
-                                .cornerRadius(10)
-                                .padding()
+                        Toggle("Bonjour, participez à la conférence!", isOn: $checkin)
+                        if checkin {
+                                Text("Vous êtes participant")
+                            // ajout de la fonctionnalité du toggle
+                            
                         }
+//                        Button {
+//                        } label: {
+//                            Text("Check In")
+//                                .frame(height: 55)
+//                                .frame(maxWidth: .infinity)
+//                                .foregroundColor(.white)
+//                                .background(Color.accentColor)
+//                                .font(.headline)
+//                                .cornerRadius(10)
+//                                .padding()
+//                        }
                         Spacer()
                 }
                 .task {
